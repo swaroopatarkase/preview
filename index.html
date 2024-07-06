@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main-product-image{
+            height: 400px;
+            width: 300px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px rgb(0, 0, 0,0.25);
+            display: block;
+            margin: 20px auto;
+        }
+        .product-image{
+            height: 140px;
+            width: 120px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .product-image-container{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <img src="./img/download (1).jpg" id ="main-product-image" class="main-product-image"/>
+    <div class="product-image-container">
+        <img src="./img/download (1).jpg" class="product-image" onclick="changeImage(1)"/>
+        <img src="./img/download (2).jpg" class="product-image" onclick="changeImage(2)"/>
+        <img src="./img/download (3).jpg" class="product-image" onclick="changeImage(3)"/>
+        <img src="./img/download (4).jpg" class="product-image" onclick="changeImage(4)"/>
+        <img src="./img/download (5).jpg" class="product-image" onclick="changeImage(5)"/>
+    </div>
+    <script>
+        function changeImage(num){
+            const mainImage = document.getElementById('main-product-image');
+            if(num=1){
+                mainImage.src="./img/download (1).jpg";
+            }
+            else if(num=2){
+                mainImage.src="./img/download (2).jpg";
+            }
+            else if(num=3){
+                mainImage.src="./img/download (3).jpg";
+            }
+            else if(num=4){
+                mainImage.src="./img/download (4).jpg";
+            }
+            else if(num=5){
+                mainImage.src="./img/download (5).jpg";
+            }
+        }
+    </script>
+</body>
+</html>
