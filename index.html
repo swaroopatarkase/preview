@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            background-color: rgb(226, 165, 175);
+        }
+        .heading{
+            font-size: 60px;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+        }
         .main-product-image{
             height: 400px;
             width: 300px;
@@ -14,6 +23,7 @@
             box-shadow: 0px 0px 10px 0px rgb(0, 0, 0,0.25);
             display: block;
             margin: 20px auto;
+            cursor: pointer;
         }
         .product-image{
             height: 140px;
@@ -31,6 +41,7 @@
     </style>
 </head>
 <body>
+    <span class="heading">Teddy Bear</span>
     <img src="./img/download (1).jpg" id ="main-product-image" class="main-product-image"/>
     <div class="product-image-container">
         <img src="./img/download (1).jpg" class="product-image" onclick="changeImage(1)"/>
@@ -42,19 +53,19 @@
     <script>
         function changeImage(num){
             const mainImage = document.getElementById('main-product-image');
-            if(num=1){
+            if(num==1){
                 mainImage.src="./img/download (1).jpg";
             }
-            else if(num=2){
+            else if(num==2){
                 mainImage.src="./img/download (2).jpg";
             }
-            else if(num=3){
+            else if(num==3){
                 mainImage.src="./img/download (3).jpg";
             }
-            else if(num=4){
+            else if(num==4){
                 mainImage.src="./img/download (4).jpg";
             }
-            else if(num=5){
+            else if(num==5){
                 mainImage.src="./img/download (5).jpg";
             }
         }
